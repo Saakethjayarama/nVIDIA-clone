@@ -25,7 +25,7 @@ window.onload = function () {
 
     banner.animate([{ opacity: 0 }, { opacity: 1 }], 1000);
     // change background
-    const host = window.location.href;
+    const host = window.location.href.replace("#", "");
     banner.style.backgroundImage = `url(${host}images/${imagesList[current]})`;
 
     // add hidden class to current content element
