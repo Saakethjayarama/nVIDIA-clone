@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+
+:root {
+  font-size: 10px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #eee;
+}
+
+header {
+  background-color: #fff;
+  padding: 10px;
+}
+
+#nav {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.op {
+  margin: 0px 10px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+#banner-container {
+  background-image: url("../images/banner_one.jpg");
+  box-sizing: border-box;
+  height: 440px;
+  object-fit: contain;
+  padding: 15px;
+  color: white;
+
+  /* flex properties */
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+#slide-control {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+#slide-control .circle {
+  cursor: pointer;
+}
+
+#banner-container .circle {
+  height: 10px;
+  width: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-color: #666;
+}
+
+#banner-container .green {
+  background-color: #76b900;
+}
+
+#banner-container .content {
+  color: white;
+}
+
+#banner-content {
+  margin: 15px;
+}
+
+#banner-content .one {
+  font-size: 3rem;
+  margin: 10px 0px;
+}
+#banner-content .two {
+  font-size: 1.7rem;
+  letter-spacing: 0.2rem;
+  line-height: 2.5rem;
+  margin: 10px 0px;
+}
+
+button {
+  background-color: #76b900;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #7ec700;
+}
