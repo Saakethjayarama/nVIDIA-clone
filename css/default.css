@@ -54,7 +54,22 @@ header {
   flex-direction: column-reverse;
   justify-content: space-between;
   align-items: center;
+
+  /* animation */
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 #slide-control {
   display: flex;
   flex-direction: row;
@@ -109,4 +124,8 @@ button {
 
 button:hover {
   background-color: #7ec700;
+}
+
+.hidden {
+  display: none;
 }
